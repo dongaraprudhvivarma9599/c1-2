@@ -60,8 +60,7 @@ jobs:
           name: student-result-ml-release
           path: release_candidate/
           if-no-files-found: error
-          retention-days: 7
-                - name: Build Docker image
+          retention-days: 7- name: Build Docker image
         run: docker build -t student-result-ml:1.0 .
 
       - name: Run Docker container
